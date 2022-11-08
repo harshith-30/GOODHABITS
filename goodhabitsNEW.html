@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{background-size: cover;
+        background-image:url(h.jpg);
+        background-repeat: no-repeat;
+    }
+    h1{
+        animation: down;
+        animation-duration: 2s;
+        background-color: rgb(193, 69, 89);
+        border-radius: 50px;
+        padding: 20px;
+        width: 500px;
+        color: black;
+        text-align: center;
+    }
+    video{
+        animation: down;
+        animation-duration: 2s;
+    }
+    .list{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    #h1{
+        animation: right;
+        animation-duration: 2s;
+    }
+    #h2{
+        animation: left;
+        animation-duration: 2s;
+    }
+    #h3{
+        animation: right;
+        animation-duration: 2s;
+    }
+    #h4{
+        animation: left;
+        animation-duration: 2s;
+    }
+    #h5{
+        animation: right;
+        animation-duration: 2s;
+    }
+    #h6{
+        animation: left;
+        animation-duration: 2s;
+    }
+    #h7{
+        animation: right;
+        animation-duration: 2s;
+    }
+    @keyframes down {
+        from {transform: translateY(-200px);}
+        to {transform: translateY(0px);}
+    }
+    @keyframes up {
+        from {transform: translateY(200px);}
+        to {transform: translateY(0px);}
+    }
+    @keyframes right {
+        from {transform: translateX(-200px);}
+        to {transform: translateX(0px);}
+    }
+    @keyframes left {
+        from {transform: translateX(200px);}
+        to {transform: translateX(0px);}
+    }
+    
+</style>
+<body>
+       <center><h1 style="color: black;  margin-top: 100px;" >Good Habits</h1></center>
+       <center>
+      <video  width="600" height="400" controls autoplay >
+        <source src="vid.mp4" type="video/mp4">
+      </video></center>
+     
+    <center><div class="list">
+        <div><h1 id="h1"> INTERACTIVE</h1></div>
+        <div><h1 id="h2">BETTER PERFORMANCE IN THE CLASS ROOM</h1></div>
+        <div><h1 id="h3"> VALUABLE UTILIZATION OF FREE TIME</h1></div>
+        <div><h1 id="h4">DYNAMIC LEARNING</h1></div>
+        <div><h1 id="h5">FUN AND ENJOYABLE LEARNING </h1></div>
+        <div><h1 id="h6">PORTABLE</h1></div>
+        <div><h1 id="h7">SYSTEMATIC EDUCATIONAL METHOD</h1></div>
+    </div></center>
+        
+</body>
+</html>
